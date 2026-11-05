@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  Godot Analyze is <b>a type-aware GDScript and Godot 4 toolkit for IntelliJ IDEA and Rider</b> – compiler-grade inspections, scene-aware navigation, refactorings, formatter, run configurations and debugger.
+  Godot Analyze is <b>a type-aware GDScript and Godot 4 toolkit for every JetBrains IDE</b> – compiler-grade inspections, scene-aware navigation, refactorings, formatter, run configurations and debugger.
 </p>
 
 <p align="center">
@@ -29,7 +29,7 @@
 - **Signal Connections**<br><sub>Jump between scene connections and their handler methods.</sub>
 - **Override Markers**<br><sub>Gutter icons for overridden functions and inherited nodes.</sub>
 - **Scene Tree Tool Window**<br><sub>The current scene's node tree, with Godot's own icons.</sub>
-- **Engine Documentation**<br><sub>Class reference for your Godot version, in IntelliJ IDEA and Rider.</sub>
+- **Engine Documentation**<br><sub>Class reference for your Godot version, right in the editor.</sub>
 - **Formatter**<br><sub>Godot-style indentation and blank lines.</sub>
 - **Run Configurations**<br><sub>Run the project or the current scene.</sub>
 - **Debugger**<br><sub>GDScript breakpoints in the IDE debugger.</sub>
@@ -38,6 +38,6 @@
 
 <br>
 
-Requires a JetBrains IDE **2026.2** or newer and **Godot 4.x**. Install it from *Settings → Plugins → Marketplace* by searching for **Godot Analyze**.
+Works in any JetBrains IDE **2026.2** or newer – IntelliJ IDEA, Rider, PyCharm, WebStorm, CLion and the rest, including the free and open-source editions. Requires **Godot 4.x**. Install it from *Settings → Plugins → Marketplace* by searching for **Godot Analyze**.
 
 <br><sub>The Godot logo is by Andrea Calabró, licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Godot editor icons are © Godot Engine contributors, MIT license. This plugin is not affiliated with or endorsed by the Godot Foundation.</sub>
