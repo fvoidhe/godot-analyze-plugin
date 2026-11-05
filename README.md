@@ -1,33 +1,43 @@
-<img src="docs/icon.svg" width="96" height="96" align="right" alt="Godot Analyze icon">
+<p align="center">
+  <img src="docs/icon.svg" width="96" height="96" alt="Godot Analyze icon">
+</p>
 
-# Godot Analyze
-**This is the public issue tracker of the Godot Analyze plugin for JetBrains IDEs.**
+<h1 align="center">Godot Analyze</h1>
 
-Godot Analyze is **a type-aware GDScript and Godot 4 toolkit for IntelliJ IDEA and Rider** – compiler-grade inspections, scene-aware navigation, refactorings, formatter, run configurations and debugger.
+<p align="center">
+  <b>This is the public issue tracker of the Godot Analyze plugin for JetBrains IDEs.</b>
+</p>
 
-<br>[website](https://fvoidhe.github.io/godot-analyze-plugin/) · [bug tracker](https://github.com/fvoidhe/godot-analyze-plugin/issues) · [report a bug](https://github.com/fvoidhe/godot-analyze-plugin/issues/new?template=bug_report.yml) · [request a feature](https://github.com/fvoidhe/godot-analyze-plugin/issues/new?template=feature_request.yml)
+<p align="center">
+  Godot Analyze is <b>a type-aware GDScript and Godot 4 toolkit for IntelliJ IDEA and Rider</b> – compiler-grade inspections, scene-aware navigation, refactorings, formatter, run configurations and debugger.
+</p>
+
+<p align="center">
+  <a href="https://fvoidhe.github.io/godot-analyze-plugin/">website</a> ·
+  <a href="https://github.com/fvoidhe/godot-analyze-plugin/issues">bug tracker</a> ·
+  <a href="https://github.com/fvoidhe/godot-analyze-plugin/issues/new?template=bug_report.yml">report a bug</a> ·
+  <a href="https://github.com/fvoidhe/godot-analyze-plugin/issues/new?template=feature_request.yml">request a feature</a>
+</p>
 <br>
-<br>
 
-- **Type-Aware Code Insight**: Types are inferred across scripts, scenes and the engine API. Completion, Go To Declaration and Find Usages follow `class_name`, `extends`, `preload()`, `get_node()` / `$Node` paths and exported properties.
-- **Compiler-Grade Inspections**: 25+ inspections modeled on the Godot compiler – incompatible assignment, return and argument types, wrong argument counts, unresolved members, override signature mismatches, assignments to constants, unreachable code, shadowed identifiers, invalid annotations, and more.
-- **Smart Completion**: Engine and project classes, members, signals, enums and `res://` paths. Picking `filter`, `map`, `any`, `all`, `sort_custom` or `reduce` expands a ready-to-fill lambda.
-- **Inlay Hints**: Inferred node types of `get_node()`, resolved resource types of `preload()`, parameter names at call sites, and declared types of exported properties right inside `.tscn` / `.tres` files.
-- **Rename Refactoring**: Rename functions, global classes and scene nodes without breaking references in scripts and scenes.
-- **Scene and Resource Files**: `.tscn`, `.tres`, `.import` and `project.godot` are fully parsed – highlighting, navigation for `ExtResource`, `SubResource`, node paths and `uid://` references.
-- **Signal Connections**: Gutter markers link `[connection]` entries in scenes with the script methods they call, in both directions.
-- **Override Markers**: Gutter icons for overriding and overridden functions, and for nodes overridden in inherited scenes.
-- **Scene Tree Tool Window**: Browse the node tree of the current scene with Godot's own node icons, attached scripts, unique names, visibility and connected signals.
-- **Engine Documentation**: Quick Documentation and parameter info come from the class reference of your Godot version, in both IntelliJ IDEA and Rider.
-- **Formatter**: Godot-style indentation for blocks, brackets and continuation lines, plus blank-line rules between declarations.
-- **Run Configurations**: Run the project or the current scene with any registered Godot installation; resources are imported before launch.
-- **Debugger**: Set breakpoints in GDScript and debug with the IDE debugger – stepping, call stacks and variables, for Godot 4.0 and newer.
-- **Godot Editor Integration**: Open or bring forward the Godot editor and switch the project's Godot version from the main toolbar. Manage multiple installations in *Settings → Languages & Frameworks → Godot Installations*.
-- **Helpers**: Code folding, commenting, spell checking, smart Enter in strings, copy `res://` path, and more.
+- **Type-Aware Code Insight**<br><sub>Types inferred across scripts, scenes and the engine API.</sub>
+- **Compiler-Grade Inspections**<br><sub>25+ checks modeled on the Godot compiler.</sub>
+- **Smart Completion**<br><sub>Classes, members, signals, enums and <code>res://</code> paths.</sub>
+- **Inlay Hints**<br><sub>Node, resource and parameter types shown inline.</sub>
+- **Rename Refactoring**<br><sub>Functions, global classes and scene nodes, references included.</sub>
+- **Scene and Resource Files**<br><sub>Full support for <code>.tscn</code>, <code>.tres</code>, <code>.import</code> and <code>project.godot</code>.</sub>
+- **Signal Connections**<br><sub>Jump between scene connections and their handler methods.</sub>
+- **Override Markers**<br><sub>Gutter icons for overridden functions and inherited nodes.</sub>
+- **Scene Tree Tool Window**<br><sub>The current scene's node tree, with Godot's own icons.</sub>
+- **Engine Documentation**<br><sub>Class reference for your Godot version, in IntelliJ IDEA and Rider.</sub>
+- **Formatter**<br><sub>Godot-style indentation and blank lines.</sub>
+- **Run Configurations**<br><sub>Run the project or the current scene.</sub>
+- **Debugger**<br><sub>GDScript breakpoints in the IDE debugger.</sub>
+- **Godot Editor Integration**<br><sub>Open the editor and switch Godot versions from the toolbar.</sub>
+- **Helpers**<br><sub>Folding, commenting, spell checking and more.</sub>
 
-<br>
 <br>
 
 Requires a JetBrains IDE **2026.2** or newer and **Godot 4.x**. Install it from *Settings → Plugins → Marketplace* by searching for **Godot Analyze**.
 
-<br>The Godot logo is by Andrea Calabró, licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Godot editor icons are © Godot Engine contributors, MIT license. This plugin is not affiliated with or endorsed by the Godot Foundation.
+<br><sub>The Godot logo is by Andrea Calabró, licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Godot editor icons are © Godot Engine contributors, MIT license. This plugin is not affiliated with or endorsed by the Godot Foundation.</sub>
