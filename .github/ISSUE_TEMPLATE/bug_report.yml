@@ -1,0 +1,49 @@
+name: Bug report
+description: Something in the plugin does not work as expected
+labels: [bug]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: A minimal GDScript / scene snippet helps a lot.
+      render: gdscript
+  - type: input
+    id: ide
+    attributes:
+      label: IDE and version
+      description: Help → About, e.g. "IntelliJ IDEA 2026.2.1" or "Rider 2026.2"
+    validations:
+      required: true
+  - type: input
+    id: plugin
+    attributes:
+      label: Plugin version
+      description: Settings → Plugins → Godot Analyze
+    validations:
+      required: true
+  - type: input
+    id: godot
+    attributes:
+      label: Godot version
+      placeholder: "4.4.1.stable"
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options: [Windows, macOS, Linux]
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or stack trace
+      description: Help → Show Log in Finder/Explorer, or the exception from the IDE error dialog.
+      render: text
