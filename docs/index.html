@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Godot Analyze</title>
-<meta name="description" content="A type-aware GDScript and Godot 4 toolkit for every JetBrains IDE.">
+<meta name="description" content="A native GDScript and Godot 4 IDE for every JetBrains IDE – plug and play, no language server.">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <style>
   :root {
@@ -39,7 +39,12 @@
   header { text-align: center; padding: 72px 0 56px; }
   header img { width: 104px; height: 104px; }
   h1 { font-size: 2.6rem; margin: 16px 0 8px; letter-spacing: -0.02em; }
-  .tagline { color: var(--muted); font-size: 1.15rem; margin: 0 0 28px; }
+  .tagline { font-size: 1.25rem; font-weight: 600; margin: 0 0 10px; }
+  .pitch { color: var(--muted); max-width: 640px; margin: 0 auto 28px; }
+  .why { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 14px; }
+  .why .item { border: 1px solid var(--border); border-top: 3px solid var(--accent); border-radius: 12px; padding: 18px; background: var(--bg); }
+  .why h3 { margin: 0 0 8px; font-size: 1.1rem; color: var(--accent); }
+  .why p { margin: 0; color: var(--muted); font-size: 0.92rem; }
   .buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
   .btn {
     display: inline-block; padding: 10px 20px; border-radius: 8px;
@@ -63,7 +68,8 @@
 <header class="wrap">
   <img src="icon.svg" alt="">
   <h1>Godot Analyze</h1>
-  <p class="tagline">A type-aware GDScript and Godot 4 toolkit for every JetBrains IDE.</p>
+  <p class="tagline">A native GDScript and Godot 4 IDE for every JetBrains IDE.</p>
+  <p class="pitch">Plug and play – no language server, no Godot editor in the background. Open as many projects as you like and get deep analysis, precise navigation and rename, rich engine docs and scene tooling out of the box.</p>
   <div class="buttons">
     <a class="btn primary" href="#install">Install</a>
     <a class="btn" href="https://github.com/fvoidhe/godot-analyze-plugin/issues/new/choose">Report an issue</a>
@@ -71,6 +77,17 @@
 </header>
 
 <main class="wrap">
+  <section>
+    <h2>Why Godot Analyze</h2>
+    <div class="why">
+      <div class="item"><h3>Plug and Play</h3><p>Install, open a project, done. The engine API for your Godot version is built in – no local Godot to launch or manage for code insight.</p></div>
+      <div class="item"><h3>No Language Server</h3><p>Analysis runs natively on the IDE's own indexes. Open any number of Godot projects side by side, each with the full experience.</p></div>
+      <div class="item"><h3>Deeper Analysis</h3><p>An enhanced parser and type engine read scripts and scenes together, powering references, navigation and rename beyond what LSP offers.</p></div>
+      <div class="item"><h3>Rich Documentation</h3><p>The engine class reference, fully rendered with clickable cross-references.</p></div>
+      <div class="item"><h3>Scene Management</h3><p>Scene tree, signals, connections and inherited-scene overrides, linked to your scripts.</p></div>
+    </div>
+  </section>
+
   <section>
     <h2>Features</h2>
     <div class="grid">

@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  Godot Analyze is <b>a type-aware GDScript and Godot 4 toolkit for every JetBrains IDE</b> – compiler-grade inspections, scene-aware navigation, refactorings, formatter, run configurations and debugger.
+  Godot Analyze is <b>a native GDScript and Godot 4 IDE for every JetBrains IDE</b> – plug and play, no language server, no Godot editor in the background. Open as many projects as you like and get deep analysis, precise navigation and rename, rich engine docs and scene tooling out of the box.
 </p>
 
 <p align="center">
@@ -19,6 +19,16 @@
   <a href="https://github.com/fvoidhe/godot-analyze-plugin/issues/new?template=feature_request.yml">request a feature</a>
 </p>
 <br>
+
+## Why Godot Analyze
+
+- **Plug and Play**<br><sub>Install, open a project, done. The engine API for your Godot version is built in – no local Godot to launch or manage for code insight.</sub>
+- **No Language Server**<br><sub>Analysis runs natively on the IDE's own indexes. Open any number of Godot projects side by side, each with the full experience.</sub>
+- **Deeper Analysis**<br><sub>An enhanced parser and type engine read scripts and scenes together, powering references, navigation and rename beyond what LSP offers.</sub>
+- **Rich Documentation**<br><sub>The engine class reference, fully rendered with clickable cross-references.</sub>
+- **Scene Management**<br><sub>Scene tree, signals, connections and inherited-scene overrides, linked to your scripts.</sub>
+
+## Features
 
 - **Type-Aware Code Insight**<br><sub>Types inferred across scripts, scenes and the engine API.</sub>
 - **Compiler-Grade Inspections**<br><sub>25+ checks modeled on the Godot compiler.</sub>
