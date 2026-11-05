@@ -83,11 +83,11 @@
   <section>
     <h2>Why Godot Analyze</h2>
     <div class="why">
-      <div class="item"><h3>Plug and Play</h3><p>Install, open a project, done. The engine API for your Godot version is built in – no local Godot to launch or manage for code insight.</p></div>
-      <div class="item"><h3>No Language Server</h3><p>Analysis runs natively on the IDE's own indexes. Open any number of Godot projects side by side, each with the full experience.</p></div>
-      <div class="item"><h3>Deeper Analysis</h3><p>An enhanced parser and type engine read scripts and scenes together, powering references, navigation and rename beyond what LSP offers.</p></div>
-      <div class="item"><h3>Rich Documentation</h3><p>The engine class reference, fully rendered with clickable cross-references.</p></div>
-      <div class="item"><h3>Scene Management</h3><p>Scene tree, signals, connections and inherited-scene overrides, linked to your scripts.</p></div>
+      <div class="item"><h3>Plug and Play</h3><p>Install, open a folder with <code>project.godot</code>, done. The engine API for your Godot version ships with the plugin – completion, docs and checks work without launching Godot.</p></div>
+      <div class="item"><h3>No Language Server</h3><p>Analysis runs on the IDE's own indexes, with no editor process or LSP port per project. Open any number of Godot projects side by side, each with the full experience.</p></div>
+      <div class="item"><h3>Deeper Analysis</h3><p>Scripts and scenes are analyzed together. In <code>@onready var sprite = $Body/Sprite</code>, the type comes from the node in the <code>.tscn</code>, so completion and inspections treat <code>sprite</code> as a <code>Sprite2D</code>.</p></div>
+      <div class="item"><h3>Rich Documentation</h3><p>Quick Documentation on any engine class, method or property shows the official class reference for your Godot version, with clickable links to related classes and members.</p></div>
+      <div class="item"><h3>Scene Management</h3><p>A Scene Tree tool window shows the open scene with Godot's icons and each node's signals. Gutter icons link every <code>[connection]</code> in a scene to its handler method and back.</p></div>
     </div>
   </section>
 
@@ -95,18 +95,18 @@
     <h2>Features</h2>
     <div class="grid">
       <div class="card"><h3>Type-Aware Code Insight</h3><p>Types inferred across scripts, scenes and the engine API.</p></div>
-      <div class="card"><h3>Compiler-Grade Inspections</h3><p>25+ checks modeled on the Godot compiler.</p></div>
+      <div class="card"><h3>Compiler-Grade Inspections</h3><p>25+ checks modeled on the Godot compiler, such as argument types, return values, unreachable code and <code>$</code> used outside a Node.</p></div>
       <div class="card"><h3>Smart Completion</h3><p>Classes, members, signals, enums and <code>res://</code> paths.</p></div>
-      <div class="card"><h3>Inlay Hints</h3><p>Node, resource and parameter types shown inline.</p></div>
-      <div class="card"><h3>Rename Refactoring</h3><p>Functions, global classes and scene nodes, references included.</p></div>
+      <div class="card"><h3>Inlay Hints</h3><p>Node, resource and parameter types shown inline – <code>$Body/Sprite</code> displays <code>Sprite2D</code>.</p></div>
+      <div class="card"><h3>Rename Refactoring</h3><p>Renaming a scene node updates <code>$</code> paths in scripts, <code>NodePath</code> values and connections in scenes, and the same node in inherited scenes. Renaming a function also updates the <code>method</code> of its <code>[connection]</code>.</p></div>
       <div class="card"><h3>Scene and Resource Files</h3><p>Full support for <code>.tscn</code>, <code>.tres</code>, <code>.import</code> and <code>project.godot</code>.</p></div>
-      <div class="card"><h3>Signal Connections</h3><p>Jump between scene connections and their handler methods.</p></div>
+      <div class="card"><h3>Signal Connections</h3><p>Jump from a <code>[connection]</code> in a <code>.tscn</code> to its handler method, and from the method back to every connection.</p></div>
       <div class="card"><h3>Override Markers</h3><p>Gutter icons for overridden functions and inherited nodes.</p></div>
       <div class="card"><h3>Scene Tree Tool Window</h3><p>The current scene's node tree, with Godot's own icons.</p></div>
       <div class="card"><h3>Engine Documentation</h3><p>Class reference for your Godot version, right in the editor.</p></div>
       <div class="card"><h3>Formatter</h3><p>Godot-style indentation and blank lines.</p></div>
       <div class="card"><h3>Run Configurations</h3><p>Run the project or the current scene.</p></div>
-      <div class="card"><h3>Debugger</h3><p>GDScript breakpoints in the IDE debugger.</p></div>
+      <div class="card"><h3>Debugger</h3><p>Breakpoints, step into/over/out, run to cursor and variable inspection in the IDE debugger.</p></div>
       <div class="card"><h3>Godot Editor Integration</h3><p>Open the editor and switch Godot versions from the toolbar.</p></div>
       <div class="card"><h3>Helpers</h3><p>Folding, commenting, spell checking and more.</p></div>
     </div>

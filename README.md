@@ -22,27 +22,27 @@
 
 ## Why Godot Analyze
 
-- **Plug and Play**<br><sub>Install, open a project, done. The engine API for your Godot version is built in – no local Godot to launch or manage for code insight.</sub>
-- **No Language Server**<br><sub>Analysis runs natively on the IDE's own indexes. Open any number of Godot projects side by side, each with the full experience.</sub>
-- **Deeper Analysis**<br><sub>An enhanced parser and type engine read scripts and scenes together, powering references, navigation and rename beyond what LSP offers.</sub>
-- **Rich Documentation**<br><sub>The engine class reference, fully rendered with clickable cross-references.</sub>
-- **Scene Management**<br><sub>Scene tree, signals, connections and inherited-scene overrides, linked to your scripts.</sub>
+- **Plug and Play**<br><sub>Install, open a folder with <code>project.godot</code>, done. The engine API for your Godot version ships with the plugin – completion, docs and checks work without launching Godot.</sub>
+- **No Language Server**<br><sub>Analysis runs on the IDE's own indexes, with no editor process or LSP port per project. Open any number of Godot projects side by side, each with the full experience.</sub>
+- **Deeper Analysis**<br><sub>Scripts and scenes are analyzed together. In <code>@onready var sprite = $Body/Sprite</code>, the type comes from the node in the <code>.tscn</code>, so completion and inspections treat <code>sprite</code> as a <code>Sprite2D</code>.</sub>
+- **Rich Documentation**<br><sub>Quick Documentation on any engine class, method or property shows the official class reference for your Godot version, with clickable links to related classes and members.</sub>
+- **Scene Management**<br><sub>A Scene Tree tool window shows the open scene with Godot's icons and each node's signals. Gutter icons link every <code>[connection]</code> in a scene to its handler method and back.</sub>
 
 ## Features
 
 - **Type-Aware Code Insight**<br><sub>Types inferred across scripts, scenes and the engine API.</sub>
-- **Compiler-Grade Inspections**<br><sub>25+ checks modeled on the Godot compiler.</sub>
+- **Compiler-Grade Inspections**<br><sub>25+ checks modeled on the Godot compiler, such as argument types, return values, unreachable code and <code>$</code> used outside a Node.</sub>
 - **Smart Completion**<br><sub>Classes, members, signals, enums and <code>res://</code> paths.</sub>
-- **Inlay Hints**<br><sub>Node, resource and parameter types shown inline.</sub>
-- **Rename Refactoring**<br><sub>Functions, global classes and scene nodes, references included.</sub>
+- **Inlay Hints**<br><sub>Node, resource and parameter types shown inline – <code>$Body/Sprite</code> displays <code>Sprite2D</code>.</sub>
+- **Rename Refactoring**<br><sub>Renaming a scene node updates <code>$</code> paths in scripts, <code>NodePath</code> values and connections in scenes, and the same node in inherited scenes. Renaming a function also updates the <code>method</code> of its <code>[connection]</code>.</sub>
 - **Scene and Resource Files**<br><sub>Full support for <code>.tscn</code>, <code>.tres</code>, <code>.import</code> and <code>project.godot</code>.</sub>
-- **Signal Connections**<br><sub>Jump between scene connections and their handler methods.</sub>
+- **Signal Connections**<br><sub>Jump from a <code>[connection]</code> in a <code>.tscn</code> to its handler method, and from the method back to every connection.</sub>
 - **Override Markers**<br><sub>Gutter icons for overridden functions and inherited nodes.</sub>
 - **Scene Tree Tool Window**<br><sub>The current scene's node tree, with Godot's own icons.</sub>
 - **Engine Documentation**<br><sub>Class reference for your Godot version, right in the editor.</sub>
 - **Formatter**<br><sub>Godot-style indentation and blank lines.</sub>
 - **Run Configurations**<br><sub>Run the project or the current scene.</sub>
-- **Debugger**<br><sub>GDScript breakpoints in the IDE debugger.</sub>
+- **Debugger**<br><sub>Breakpoints, step into/over/out, run to cursor and variable inspection in the IDE debugger.</sub>
 - **Godot Editor Integration**<br><sub>Open the editor and switch Godot versions from the toolbar.</sub>
 - **Helpers**<br><sub>Folding, commenting, spell checking and more.</sub>
 
