@@ -48,6 +48,6 @@
 
 <br>
 
-Works in any JetBrains IDE **2026.2** or newer – IntelliJ IDEA, Rider, PyCharm, WebStorm, CLion and the rest, including the free and open-source editions. Requires **Godot 4.x**. Install it from *Settings → Plugins → Marketplace* by searching for **Godot Analyze**.
+Works in any JetBrains IDE **2026.2** or newer, including the free and open-source editions. Requires **Godot 4.x**. Install it from *Settings → Plugins → Marketplace* by searching for **Godot Analyze**.
 
 <br><sub>The Godot logo is by Andrea Calabró, licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Godot editor icons are © Godot Engine contributors, MIT license. This plugin is not affiliated with or endorsed by the Godot Foundation.</sub>
