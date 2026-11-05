@@ -1,3 +1,5 @@
+<img src="docs/icon.svg" width="96" height="96" align="right" alt="Godot Analyze icon">
+
 # Godot Analyze
 **This is the public issue tracker of the Godot Analyze plugin for JetBrains IDEs.**
 
