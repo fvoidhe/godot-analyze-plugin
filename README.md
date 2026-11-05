@@ -48,6 +48,15 @@
 
 <br>
 
-Works in any JetBrains IDE **2026.2** or newer, including the free and open-source editions. Requires **Godot 4.x**. Install it from *Settings → Plugins → Marketplace* by searching for **Godot Analyze**.
+## Install
+
+1. Open *Settings → Plugins → Marketplace* in your IDE.
+2. Search for **Godot Analyze** and click *Install*.
+3. Open a folder that contains `project.godot`.
+
+Works in any JetBrains IDE **2026.2** or newer, including the free and open-source editions. Requires **Godot 4.x**.
+
+> [!IMPORTANT]
+> **Rider users:** Rider bundles the *Godot Support* plugin, which registers the same languages and file types. Disable it in *Settings → Plugins → Installed* and restart the IDE before using Godot Analyze. Other IDEs need no extra steps.
 
 <br><sub>The Godot logo is by Andrea Calabró, licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Godot editor icons are © Godot Engine contributors, MIT license. This plugin is not affiliated with or endorsed by the Godot Foundation.</sub>

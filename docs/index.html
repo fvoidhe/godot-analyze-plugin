@@ -57,6 +57,9 @@
   .card { background: var(--bg-alt); border: 1px solid var(--border); border-radius: 12px; padding: 18px 20px; }
   .card h3 { margin: 0 0 8px; font-size: 1.05rem; }
   .card p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+  .note { border-left: 3px solid #d29922; background: var(--bg-alt); border-radius: 8px; padding: 14px 18px; margin-top: 16px; }
+  .note strong { display: block; margin-bottom: 4px; }
+  .note p { margin: 0; color: var(--muted); }
   code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.9em; }
   .steps { margin: 0; padding-left: 20px; }
   .steps li { margin: 6px 0; }
@@ -117,6 +120,10 @@
       <li>Open a folder that contains <code>project.godot</code>.</li>
     </ol>
     <p>Works in any JetBrains IDE 2026.2 or newer, including the free and open-source editions. Requires Godot 4.x.</p>
+    <div class="note">
+      <strong>Rider users</strong>
+      <p>Rider bundles the <em>Godot Support</em> plugin, which registers the same languages and file types. Disable it in <em>Settings → Plugins → Installed</em> and restart the IDE before using Godot Analyze. Other IDEs need no extra steps.</p>
+    </div>
   </section>
 
   <section>
