@@ -16,7 +16,8 @@
   <a href="https://fvoidhe.github.io/godot-analyze-plugin/">website</a> ·
   <a href="https://github.com/fvoidhe/godot-analyze-plugin/issues">bug tracker</a> ·
   <a href="https://github.com/fvoidhe/godot-analyze-plugin/issues/new?template=bug_report.yml">report a bug</a> ·
-  <a href="https://github.com/fvoidhe/godot-analyze-plugin/issues/new?template=feature_request.yml">request a feature</a>
+  <a href="https://github.com/fvoidhe/godot-analyze-plugin/issues/new?template=feature_request.yml">request a feature</a> ·
+  <a href="mailto:fvoidcn@gmail.com">email</a>
 </p>
 <br>
 
